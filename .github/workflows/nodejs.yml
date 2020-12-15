@@ -19,9 +19,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Make envs
       run: |
-        echo "CLOUDFLARE_AUTH_EMAIL=${{secret.X_AUTH_EMAIL}}" >> .env
-        echo "CLOUDFLARE_AUTH_KEY=${{secret.X_AUTH_KEY}}" >> .env
-        echo "CLOUDFLARE_SITE_NAME=${{secret.FQDN}}" >> .env
+        echo "CLOUDFLARE_AUTH_EMAIL=${{secrets.X_AUTH_EMAIL}}" >> .env
+        echo "CLOUDFLARE_AUTH_KEY=${{secrets.X_AUTH_KEY}}" >> .env
+        echo "CLOUDFLARE_SITE_NAME=${{secrets.FQDN}}" >> .env
         echo "EXAMPLE_GREETING=Phantom" >> .env
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
