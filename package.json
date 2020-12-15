@@ -13,12 +13,12 @@
   },
   "homepage": "https://github.com/detroitenglish/cloudflare-workers-webpack-boilerplate",
   "scripts": {
-    "build": "webpack --bail --no-deploy",
-    "build:example": "webpack --bail --example --no-deploy",
-    "deploy": "webpack --bail --deploy",
-    "deploy:example": "webpack --bail --example --deploy",
+    "build": "webpack --no-deploy",
+    "build:example": "webpack --example --no-deploy",
+    "deploy": "webpack --deploy",
+    "deploy:example": "webpack --example --deploy",
     "lint": "eslint src lib test webpack.config.js --ignore-pattern=eslint.test.js",
-    "reset": "webpack --bail --reset",
+    "reset": "webpack --reset",
     "test": "ava --fail-fast"
   },
   "devDependencies": {
