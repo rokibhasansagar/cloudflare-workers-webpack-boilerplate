@@ -30,4 +30,4 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: npm run lint
-    - run: cat "dist/*.js"
+    - run: cat dist/*.js
